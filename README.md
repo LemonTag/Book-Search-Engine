@@ -1,254 +1,85 @@
 # 21 MERN: Book Search Engine
 
-## Your Task
 
-Your assignment this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
 
-This week, you’ll take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
+# Installation
+I opened git labs and made a git clone of the challenges I had to complete into a separate folder, which I then made into my Progressive-Web-Applications folder. 
+After that, I went into my git hub, created repositories for my Web-API, and connected them with my challenges folder using git bash. I also created my assets folder there.
+Then, I open the folder using Visual Studio code to make my index.html and style.css, and Javascript to use my project.
 
-To complete the assignment, you’ll need to do the following:
+https://github.com/LemonTag/Book-Search-Engine
+<img width="1919" alt="image" src="https://github.com/LemonTag/Book-Search-Engine/assets/50891761/d7cfe626-d6ec-4a3d-a077-cf5d609e6957">
 
-1. Set up an Apollo Server to use GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
 
-2. Modify the existing authentication middleware so that it works in the context of a GraphQL API.
+Description
+The Book Search Engine project is a full-stack MERN (MongoDB, Express.js, React, Node.js) application that allows users to search for books and save their favorite ones to a personalized list. This project demonstrates the integration of various modern web technologies and best practices.
 
-3. Create an Apollo Provider so that requests can communicate with an Apollo Server.
+Motivation
+The motivation behind this project was to create a robust and efficient book search engine that leverages modern web development technologies. The goal was to provide users with a seamless and interactive experience for searching and managing their favorite books.
 
-4. Deploy your application to Render with a MongoDB database using MongoDB Atlas. Use the [Deploy with Render and MongoDB Atlas](https://coding-boot-camp.github.io/full-stack/mongodb/deploy-with-render-and-mongodb-atlas) walkthrough for instructions.
+Purpose
+This project was built to showcase skills in full-stack development, particularly with the MERN stack. It serves as a practical application of integrating front-end and back-end technologies to create a complete web application.
 
-## User Story
+Problem Solved
+The Book Search Engine solves the problem of finding and managing book information in one place. Users can search for books, view detailed information, and save their favorite books for future reference. This provides a centralized solution for book enthusiasts to manage their reading lists.
 
-```md
-AS AN avid reader
-I WANT to search for new books to read
-SO THAT I can keep a list of books to purchase
-```
+Learning Outcomes
+Throughout this project, I learned how to:
 
-## Acceptance Criteria
+Integrate front-end and back-end technologies using the MERN stack.
+Implement user authentication and authorization.
+Manage state in a React application using state management libraries.
+Design and implement a RESTful API with Node.js and Express.js.
+Work with MongoDB to store and retrieve data.
+Optimize application performance for a better user experience.
+Project Highlights
+What makes this project stand out:
 
-```md
-GIVEN a book search engine
-WHEN I load the search engine
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
-WHEN I click on the Search for Books menu option
-THEN I am presented with an input field to search for books and a submit button
-WHEN I am not logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
-WHEN I click on the Login/Signup menu option
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-THEN I am presented with two inputs for an email address and a password and login button
-WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
-```
+Offline Functionality: Thanks to service workers and IndexedDB, the application remains fully functional even without an internet connection.
+Installable: Users can install the app on their devices, giving it a native app-like feel.
+Fast and Responsive: The application loads quickly and responds smoothly to user interactions, thanks to efficient caching strategies and asset optimization.
+Modern Development Practices: The project utilizes tools like Workbox, Webpack, and modern JavaScript syntax, showcasing up-to-date development skills and best practices.
+Key Features
+Search Books: Users can search for books by title, author, or keywords.
+Save Favorites: Users can save their favorite books to a personalized list.
+User Authentication: Secure login and registration using JWT tokens.
+Responsive Design: The application is optimized for both desktop and mobile devices.
+Technologies Used
+Front-End: React, Bootstrap, Service Workers, IndexedDB
+Back-End: Node.js, Express.js, MongoDB, JWT for authentication
+Development Tools: Webpack, Babel, Workbox
+By building this project, I demonstrated my ability to create a full-stack application that is not only functional but also optimized for performance and usability. The Book Search Engine stands as a testament to my skills in modern web development practices.
 
-## Mock-Up
 
-Let's start by revisiting the web application's appearance and functionality.
+# credits
+My group meet-ups with my classes have helped 
+Cody Chase, the greatest TA ever, helped me show how to use Javascript and Node.
+Mary the besest TA ever, helped me with Javascript and Node.
 
-As you can see in the following animation, a user can type a search term (in this case, "star wars") in a search box and the results appear:
 
-![Animation shows "star wars" typed into a search box and books about Star Wars appearing as results.](./Assets/21-mern-homework-demo-01.gif)
+# License 
+MIT License
 
-The user can save books by clicking "Save This Book!" under each search result, as shown in the following animation:
+Copyright (c) [2024] [Keegan Micu]
 
-![Animation shows user clicking "Save This Book!" button to save books that appear in search results. The button label changes to "Book Already Saved" after it is clicked and the book is saved.](./Assets/21-mern-homework-demo-02.gif)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software") to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-A user can view their saved books on a separate page, as shown in the following animation:
+The above copyright notice and this permission notice shall be included in all
 
-![The Viewing Lernantino's Books page shows the books that the user Lernaninto has saved.](./Assets/21-mern-homework-demo-03.gif)
+THE SOFTWARE IS PROVIDED "AS IS"WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-## Getting Started
+# Badges
+![Static Badge](https://img.shields.io/badge/vscoding-lightblue) ![brettops tool](https://img.shields.io/badge/brettops-tool-209cdf?labelColor=162d50) ![Static Badge](https://img.shields.io/badge/javascript-yellow) ![Static Badge](https://img.shields.io/badge/style.css-lightblue) ![Static Badge](https://img.shields.io/badge/index.html-orange)
 
-In order for this application to use a GraphQL API, you’ll need to refactor the API to use GraphQL on the back end and add some functionality to the front end. The following sections contain details about the files you’ll need to modify on the back end and the front end.
 
-**Important**: Make sure to study the application before building upon it. Better yet, start by making a copy of it. It's already a working application&mdash;you're converting it from RESTful API practices to a GraphQL API.
-
-### Back-End Specifications
-
-You’ll need to complete the following tasks in each of these back-end files:
-
-* `auth.js`: Update the auth middleware function to work with the GraphQL API.
-
-* `server.js`: Implement the Apollo Server and apply it to the Express server as middleware.
-
-* `Schemas` directory:
-
-  * `index.js`: Export your typeDefs and resolvers.
-
-  * `resolvers.js`: Define the query and mutation functionality to work with the Mongoose models.
-
-  **Hint**: Use the functionality in the `user-controller.js` as a guide.
-
-  * `typeDefs.js`: Define the necessary `Query` and `Mutation` types:
-
-    * `Query` type:
-
-      * `me`: Which returns a `User` type.
-  
-    * `Mutation` type:
-
-      * `login`: Accepts an email and password as parameters; returns an `Auth` type.
-
-      * `addUser`: Accepts a username, email, and password as parameters; returns an `Auth` type.
-
-      * `saveBook`: Accepts a book author's array, description, title, bookId, image, and link as parameters; returns a `User` type. (Look into creating what's known as an `input` type to handle all of these parameters!)
-
-      * `removeBook`: Accepts a book's `bookId` as a parameter; returns a `User` type.
-
-    * `User` type:
-
-      * `_id`
-
-      * `username`
-
-      * `email`
-
-      * `bookCount`
-
-      * `savedBooks` (This will be an array of the `Book` type.)
-
-    * `Book` type:
-
-      * `bookId` (Not the `_id`, but the book's `id` value returned from Google's Book API.)
-
-      * `authors` (An array of strings, as there may be more than one author.)
-
-      * `description`
-
-      * `title`
-
-      * `image`
-
-      * `link`
-
-    * `Auth` type:
-
-      * `token`
-
-      * `user` (References the `User` type.)
-
-### Front-End Specifications
-
-You'll need to create the following front-end files:
-
-* `queries.js`: This will hold the query `GET_ME`, which will execute the `me` query set up using Apollo Server.
-
-* `mutations.js`:
-
-  * `LOGIN_USER` will execute the `loginUser` mutation set up using Apollo Server.
-
-  * `ADD_USER` will execute the `addUser` mutation.
-
-  * `SAVE_BOOK` will execute the `saveBook` mutation.
-
-  * `REMOVE_BOOK` will execute the `removeBook` mutation.
-
-Additionally, you’ll need to complete the following tasks in each of these front-end files:
-
-* `App.jsx`: Create an Apollo Provider to make every request work with the Apollo Server.
- 
-* `SearchBooks.jsx`:
-
-  * Use the Apollo `useMutation()` Hook to execute the `SAVE_BOOK` mutation in the `handleSaveBook()` function instead of the `saveBook()` function imported from the `API` file.
-
-  * Make sure you keep the logic for saving the book's ID to state in the `try...catch` block!
-
-* `SavedBooks.jsx`:
-
-  * Remove the `useEffect()` Hook that sets the state for `UserData`.
-
-  * Instead, use the `useQuery()` Hook to execute the `GET_ME` query on load and save it to a variable named `userData`.
-
-  * Use the `useMutation()` Hook to execute the `REMOVE_BOOK` mutation in the `handleDeleteBook()` function instead of the `deleteBook()` function that's imported from `API` file. (Make sure you keep the `removeBookId()` function in place!)
-
-* `SignupForm.jsx`: Replace the `addUser()` functionality imported from the `API` file with the `ADD_USER` mutation functionality.
-
-* `LoginForm.jsx`: Replace the `loginUser()` functionality imported from the `API` file with the `LOGIN_USER` mutation functionality.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Has an Apollo Server that uses GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
-
-  * Use an Apollo Server and apply it to the Express.js server as middleware.
-
-  * Include schema settings for resolvers and typeDefs as outlined in the Challenge instructions.
-
-  * Modify the existing authentication middleware to work in the context of a GraphQL API.
-
-  * Use an Apollo Provider so that the application can communicate with the Apollo Server.
-
-  * Application must be deployed to Render.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to the deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
